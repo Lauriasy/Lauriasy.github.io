@@ -21,7 +21,7 @@
   algolia: undefined,
   localSearch: undefined,
   translate: undefined,
-  noticeOutdate: undefined,
+  noticeOutdate: {"limitDay":1,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
   highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":330},
   copy: {
     success: '复制成功',
@@ -59,12 +59,12 @@
   configTitle: 'Lauriasy\'s Space',
   title: '关于我',
   postAI: '',
-  pageFillDescription: '美丽湘南 · 郴州变量亮色暗色自适应全局样式卡片通用个人简介头像改为圆角矩形与歌手风格统一改为圆角矩形移除由父容器控制圆角座右铭家乡自适应容器移除固定比例宽度撑满高度自适应保持原始比例完整显示图片无裁剪可能留白喜欢的歌手爱好扩展区域辅助文字响应式移动端家乡图片占位文字位置微调你好我是正在成长的热爱生活的高中生热爱探索未知相信行胜于言我的家乡美丽湘南郴州湖南省郴州市林中之城郴州位于湖南省东南部素有林中之城的美誉这里有莽山的云海东江湖的晨雾苏仙岭的钟声山水如画烟火人间林中之城东江湖莽山鱼粉之乡喜欢的歌手世女一坂本龙一音乐教授说唱之神霍尼女王音乐是生活的底色我的爱好听音乐摄影更多探索正在读我与地坛目标写篇博客想去冰岛新西兰持续更新中更多内容敬请期待',
+  pageFillDescription: '美丽湘南 · 郴州变量亮色暗色自适应暗色模式专用变量亮色模式下与主色一致暗色模式下边框颜色稍亮与背景区分新增亮色模式覆盖解决手动切换亮色后仍为深色的问题全局样式卡片通用个人简介座右铭家乡喜欢的歌手弹出卡片风格每个歌手项作为一个触发器弹出层默认隐藏弹出层中的头像暗色模式下弹出卡片增强样式原卡片中的内容爱好扩展区域辅助文字响应式你好我是正在成长的热爱生活的高中生热爱探索未知相信行胜于言我的家乡美丽湘南郴州湖南省郴州市林中之城郴州位于湖南省东南部素有林中之城的美誉这里有莽山的云海东江湖的晨雾苏仙岭的钟声山水如画烟火人间林中之城东江湖莽山鱼粉之乡喜欢的歌手世女一世女一创作才女流行天后代表作座格莱美坂本龙一永远的教授配乐大师坂本龙一永远的教授配乐大师反战人士代表作奥斯卡最佳配乐说唱之神说唱之神押韵狂魔嘻哈传奇代表作座格莱美霍尼女王霍尼女王流行新星实力唱将代表作新生代实力唱将我的爱好听音乐摄影更多探索正在读我与地坛目标写篇博客想去冰岛新西兰持续更新中更多内容敬请期待',
   isPost: false,
   isHome: false,
   isHighlightShrink: false,
   isToc: false,
-  postUpdate: '2026-07-17 13:02:50',
+  postUpdate: '2026-07-17 20:51:06',
   postMainColor: '',
 }</script><noscript><style type="text/css">
   #nav {
@@ -193,7 +193,7 @@
         }
       }
       detectApple()
-    })(window)</script><link rel="stylesheet" href="/css/dashboard.css" media="all"><!-- hexo injector head_end start --><meta name="referrer" content="no-referrer"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 8.1.1"></head><body data-type="anzhiyu"><div id="web_bg"></div><div id="an_music_bg"></div><div id="loading-box" onclick="document.getElementById(&quot;loading-box&quot;).classList.add(&quot;loaded&quot;)"><div class="loading-bg"><img class="loading-img nolazyload" alt="加载头像" src="https://i0.hdslb.com/bfs/new_dyn/52338650225e8ab9c06ea89856e1d1082109200351.jpg@1192w_1192h.avif"/><div class="loading-image-dot"></div></div></div><script>const preloader = {
+    })(window)</script><link rel="stylesheet" href="/css/dashboard.css" media="all"><link rel="stylesheet" href="/css/notice-card.css" media="all"><!-- hexo injector head_end start --><meta name="referrer" content="no-referrer"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 8.1.1"></head><body data-type="anzhiyu"><div id="web_bg"></div><div id="an_music_bg"></div><div id="loading-box" onclick="document.getElementById(&quot;loading-box&quot;).classList.add(&quot;loaded&quot;)"><div class="loading-bg"><img class="loading-img nolazyload" alt="加载头像" src="https://i0.hdslb.com/bfs/new_dyn/52338650225e8ab9c06ea89856e1d1082109200351.jpg@1192w_1192h.avif"/><div class="loading-image-dot"></div></div></div><script>const preloader = {
   endLoading: () => {
     document.getElementById('loading-box').classList.add("loaded");
   },
@@ -207,7 +207,7 @@ setTimeout(function(){preloader.endLoading();},10000)
 if (true) {
   document.addEventListener('pjax:send', () => { preloader.initLoading() })
   document.addEventListener('pjax:complete', () => { preloader.endLoading() })
-}</script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.1.10/progress_bar/progress_bar.css"/><script async="async" src="https://cdn.cbd.int/pace-js@1.2.4/pace.min.js" data-pace-options="{ &quot;restartOnRequestAfter&quot;:false,&quot;eventLag&quot;:false}"></script><div class="page" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><div id="nav-group"><span id="blog_name"><a id="site-name" href="/" accesskey="h"><div class="title">Lauriasy's Space</div><i class="anzhiyufont anzhiyu-icon-house-chimney"></i></a></span><div class="mask-name-container"><div id="name-container"><a id="page-name" href="javascript:anzhiyu.scrollToDest(0, 500)">PAGE_NAME</a></div></div><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 文章</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><i class="anzhiyufont anzhiyu-icon-box-archive faa-tada" style="font-size: 0.9em;"></i><span> 隧道</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><i class="anzhiyufont anzhiyu-icon-shapes faa-tada" style="font-size: 0.9em;"></i><span> 分类</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags faa-tada" style="font-size: 0.9em;"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 我的</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/music/?id=17757011521&amp;server=netease"><i class="anzhiyufont anzhiyu-icon-music faa-tada" style="font-size: 0.9em;"></i><span> 音乐</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/compass/"><i class="fa-regular fa-compass faa-tada"></i><span> 网址导航</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/equipment/"><span> 装备</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 摸鱼一下</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/teacherrabbit"><i class="fa-solid fa-gamepad faa-tada"></i><span> TeacherRabbit</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 关于</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/about/"><i class="fa-solid fa-user-tag faa-tada"></i><span> 关于本人</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/AboutSide/"><i class="fa-solid fa-book faa-tada"></i><span> 关于本站</span></a></li></ul></div></div></div><div id="nav-right"><div class="nav-button" id="randomPost_button"><a class="site-page" onclick="toRandomPost()" title="随机前往一个文章" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-dice"></i></a></div><div id="console"><div class="console-card-group-reward"><ul class="reward-all console-card"><li class="reward-item"><a href="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-weichat.png" target="_blank"><img class="post-qr-code-img" alt="微信" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-weichat.png"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-alipay.png" target="_blank"><img class="post-qr-code-img" alt="支付宝" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-alipay.png"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div><div class="console-card-group"><div class="console-card-group-left"><div class="console-card" id="card-newest-comments"><div class="card-content"><div class="author-content-item-tips">互动</div><span class="author-content-item-title"> 最新评论</span></div><div class="aside-list"><span>正在加载中...</span></div></div></div><div class="console-card-group-right"><div class="console-card tags"><div class="card-content"><div class="author-content-item-tips">音乐</div><span class="author-content-item-title">灵魂的碰撞💥</span></div></div><div class="console-card history"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-box-archiv"></i><span>文章</span></div><div class="card-archives"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2026/05/"><span class="card-archive-list-date">五月 2026</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">2</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2026/04/"><span class="card-archive-list-date">四月 2026</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2026/02/"><span class="card-archive-list-date">二月 2026</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span>篇</span></div></a></li></ul></div><hr/></div></div></div><div class="button-group"><div class="console-btn-item"><a class="darkmode_switchbutton" title="显示模式切换" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-moon"></i></a></div><div class="console-btn-item" id="consoleHideAside" onclick="anzhiyu.hideAsideBtn()" title="边栏显示控制"><a class="asideSwitch"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></a></div><div class="console-btn-item" id="consoleMusic" onclick="anzhiyu.musicToggle()" title="音乐开关"><a class="music-switch"><i class="anzhiyufont anzhiyu-icon-music"></i></a></div></div><div class="console-mask" onclick="anzhiyu.hideConsole()" href="javascript:void(0);"></div></div><div class="nav-button" id="nav-totop"><a class="totopbtn" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i><span id="percent" onclick="anzhiyu.scrollToDest(0,500)">0</span></a></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);" title="切换"><i class="anzhiyufont anzhiyu-icon-bars"></i></a></div></div></div></nav></header><main id="blog-container"><div class="layout" id="content-inner"><div id="page"><h1 class="page-title">关于我</h1><div id="article-container">
+}</script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.1.10/progress_bar/progress_bar.css"/><script async="async" src="https://cdn.cbd.int/pace-js@1.2.4/pace.min.js" data-pace-options="{ &quot;restartOnRequestAfter&quot;:false,&quot;eventLag&quot;:false}"></script><div class="page" id="body-wrap"><header class="not-top-img" id="page-header"><nav id="nav"><div id="nav-group"><span id="blog_name"><a id="site-name" href="/" accesskey="h"><div class="title">Lauriasy's Space</div><i class="anzhiyufont anzhiyu-icon-house-chimney"></i></a></span><div class="mask-name-container"><div id="name-container"><a id="page-name" href="javascript:anzhiyu.scrollToDest(0, 500)">PAGE_NAME</a></div></div><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 文章</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><i class="anzhiyufont anzhiyu-icon-box-archive faa-tada" style="font-size: 0.9em;"></i><span> 隧道</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><i class="anzhiyufont anzhiyu-icon-shapes faa-tada" style="font-size: 0.9em;"></i><span> 分类</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags faa-tada" style="font-size: 0.9em;"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 我的</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/music/?id=17757011521&amp;server=netease"><i class="anzhiyufont anzhiyu-icon-music faa-tada" style="font-size: 0.9em;"></i><span> 音乐</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/compass/"><i class="fa-regular fa-compass faa-tada"></i><span> 网址导航</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/equipment/"><i class="fa-solid fa-person-walking-luggage faa-tada"></i><span> 装备</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 关于</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/about/"><i class="fa-solid fa-user-tag faa-tada"></i><span> 关于本人</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/AboutSide/"><i class="fa-solid fa-book faa-tada"></i><span> 关于本站</span></a></li></ul></div></div></div><div id="nav-right"><div class="nav-button" id="randomPost_button"><a class="site-page" onclick="toRandomPost()" title="随机前往一个文章" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-dice"></i></a></div><div id="console"><div class="console-card-group-reward"><ul class="reward-all console-card"><li class="reward-item"><a href="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-weichat.png" target="_blank"><img class="post-qr-code-img" alt="微信" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-weichat.png"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-alipay.png" target="_blank"><img class="post-qr-code-img" alt="支付宝" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://npm.elemecdn.com/anzhiyu-blog@1.1.6/img/post/common/qrcode-alipay.png"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div><div class="console-card-group"><div class="console-card-group-left"><div class="console-card" id="card-newest-comments"><div class="card-content"><div class="author-content-item-tips">互动</div><span class="author-content-item-title"> 最新评论</span></div><div class="aside-list"><span>正在加载中...</span></div></div></div><div class="console-card-group-right"><div class="console-card tags"><div class="card-content"><div class="author-content-item-tips">音乐</div><span class="author-content-item-title">灵魂的碰撞💥</span></div></div><div class="console-card history"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-box-archiv"></i><span>文章</span></div><div class="card-archives"><div class="item-headline"><i class="anzhiyufont anzhiyu-icon-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2026/05/"><span class="card-archive-list-date">五月 2026</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">2</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2026/04/"><span class="card-archive-list-date">四月 2026</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span>篇</span></div></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2026/02/"><span class="card-archive-list-date">二月 2026</span><div class="card-archive-list-count-group"><span class="card-archive-list-count">1</span><span>篇</span></div></a></li></ul></div><hr/></div></div></div><div class="button-group"><div class="console-btn-item"><a class="darkmode_switchbutton" title="显示模式切换" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-moon"></i></a></div><div class="console-btn-item" id="consoleHideAside" onclick="anzhiyu.hideAsideBtn()" title="边栏显示控制"><a class="asideSwitch"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></a></div><div class="console-btn-item" id="consoleMusic" onclick="anzhiyu.musicToggle()" title="音乐开关"><a class="music-switch"><i class="anzhiyufont anzhiyu-icon-music"></i></a></div></div><div class="console-mask" onclick="anzhiyu.hideConsole()" href="javascript:void(0);"></div></div><div class="nav-button" id="nav-totop"><a class="totopbtn" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i><span id="percent" onclick="anzhiyu.scrollToDest(0,500)">0</span></a></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);" title="切换"><i class="anzhiyufont anzhiyu-icon-bars"></i></a></div></div></div></nav></header><main id="blog-container"><div class="layout" id="content-inner"><div id="page"><h1 class="page-title">关于我</h1><div id="article-container">
 
 <style>
     /* ===== CSS 变量（亮色/暗色自适应） ===== */
@@ -235,6 +235,8 @@ if (true) {
         --about-hometown-placeholder-text: #8a9bb0;
         --about-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
         --about-accent: var(--anzhiyu-main, #4a90d9);
+        /* 暗色模式专用变量（亮色模式下与主色一致） */
+        --about-popup-border: var(--about-accent);
     }
 
     @media (prefers-color-scheme: dark) {
@@ -261,6 +263,8 @@ if (true) {
             --about-hometown-placeholder-bg: rgba(30, 38, 48, 0.7);
             --about-hometown-placeholder-text: #b0c4de;
             --about-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+            /* 暗色模式下边框颜色稍亮，与背景区分 */
+            --about-popup-border: #5a7a9a;
         }
     }
 
@@ -288,6 +292,34 @@ if (true) {
         --about-hometown-placeholder-bg: rgba(30, 38, 48, 0.7);
         --about-hometown-placeholder-text: #b0c4de;
         --about-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+        --about-popup-border: #5a7a9a;
+    }
+
+    /* ===== 新增亮色模式覆盖（解决手动切换亮色后仍为深色的问题） ===== */
+    [data-theme="light"] {
+        --about-card-bg: #ffffff;
+        --about-card-hover-shadow: 0 16px 48px rgba(0, 0, 0, 0.08);
+        --about-card-border: rgba(0, 0, 0, 0.03);
+        --about-text-primary: #1a2634;
+        --about-text-secondary: #4a5a6e;
+        --about-text-muted: #7a8a9e;
+        --about-text-light: #8a9bb0;
+        --about-profile-bg: linear-gradient(145deg, #f8faff, #ffffff);
+        --about-motto-bg: linear-gradient(135deg, #f0f6ff, #fafcff);
+        --about-tag-bg: #eef4fa;
+        --about-tag-text: #4a6a8a;
+        --about-singer-bg: #f8faff;
+        --about-singer-hover-bg: #ffffff;
+        --about-singer-avatar-bg: #eef2f7;
+        --about-hobby-bg: #f8faff;
+        --about-hobby-hover-bg: #ffffff;
+        --about-extend-bg: #f8faff;
+        --about-extend-border: #d0dcec;
+        --about-extend-hover-bg: #f0f6ff;
+        --about-hometown-placeholder-bg: rgba(255,255,255,0.6);
+        --about-hometown-placeholder-text: #8a9bb0;
+        --about-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+        --about-popup-border: var(--about-accent);
     }
 
     /* ===== 全局样式 ===== */
@@ -364,12 +396,11 @@ if (true) {
         pointer-events: none;
     }
 
-    /* ---- 头像改为圆角矩形，与歌手风格统一 ---- */
     .profile-avatar {
         flex-shrink: 0;
         width: 120px;
         height: 120px;
-        border-radius: 12px;            /* 改为圆角矩形 */
+        border-radius: 12px;
         background: linear-gradient(135deg, var(--about-accent), #7b68ee);
         display: flex;
         align-items: center;
@@ -385,7 +416,6 @@ if (true) {
         object-fit: cover;
         object-position: center;
         display: block;
-        /* 移除 border-radius: 50%，由父容器控制圆角 */
     }
 
     .profile-info {
@@ -452,7 +482,7 @@ if (true) {
         letter-spacing: 0;
     }
 
-    /* ===== 家乡（自适应容器） ===== */
+    /* ===== 家乡 ===== */
     .hometown-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -463,19 +493,18 @@ if (true) {
         border-radius: 16px;
         overflow: hidden;
         background: var(--about-singer-avatar-bg);
-        /* 移除固定比例 aspect-ratio */
         display: flex;
         align-items: center;
         justify-content: center;
         position: relative;
         min-height: 180px;
-        width: 100%;          /* 宽度撑满 */
+        width: 100%;
         box-shadow: inset 0 1px 3px rgba(0,0,0,0.05);
     }
     .hometown-image img {
         width: 100%;
-        height: auto;          /* 高度自适应，保持原始比例 */
-        object-fit: contain;   /* 完整显示图片，无裁剪（可能留白） */
+        height: auto;
+        object-fit: contain;
         display: block;
     }
     .hometown-image .placeholder-text {
@@ -533,31 +562,222 @@ if (true) {
         color: var(--about-accent);
     }
 
-    /* ===== 喜欢的歌手 ===== */
+    /* ============================================================
+       喜欢的歌手 · Microsoft Store 弹出卡片风格
+       ============================================================ */
     .singer-grid {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
         gap: 24px;
+        overflow: visible;
+        padding: 4px 2px 8px;
+        position: relative;
     }
+
+    /* ---- 每个歌手项作为一个触发器 ---- */
     .singer-item {
+        position: relative;
+        z-index: 0;
         background: var(--about-singer-bg);
         border-radius: 16px;
         padding: 20px 14px 16px;
         text-align: center;
-        transition: all 0.25s ease;
         border: 1px solid transparent;
-        cursor: default;
+        cursor: pointer;
         display: flex;
         flex-direction: column;
         align-items: center;
+        transition: background 0.3s ease, border-color 0.3s ease;
+        overflow: visible;
     }
+
     .singer-item:hover {
         background: var(--about-singer-hover-bg);
         border-color: var(--about-accent);
-        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
-        transform: translateY(-4px);
+        z-index: 999;
+        box-shadow: none;
+        transform: none;
     }
-    .singer-avatar {
+
+    /* ---- 弹出层（默认隐藏） ---- */
+    .singer-popup {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0.92);
+        opacity: 0;
+        pointer-events: none;
+        z-index: 1000;
+        width: 280px;
+        background: var(--about-card-bg);
+        color: var(--about-text-primary);
+        border-radius: 20px;
+        padding: 28px 22px 24px;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.18), 0 8px 24px rgba(0, 0, 0, 0.06);
+        border: 1px solid var(--about-popup-border);
+        transition: all 0.35s cubic-bezier(0.22, 0.61, 0.36, 1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        will-change: transform, opacity;
+    }
+
+    .singer-item:hover .singer-popup {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translate(-50%, -50%) scale(1);
+        box-shadow: 0 24px 72px rgba(0, 0, 0, 0.20), 0 8px 28px rgba(74, 144, 217, 0.12);
+    }
+
+    /* 弹出层中的头像 */
+    .singer-popup .popup-avatar {
+        width: 100%;
+        max-width: 200px;
+        height: auto;
+        border-radius: 14px;
+        overflow: hidden;
+        background: var(--about-singer-avatar-bg);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+        margin-bottom: 14px;
+        flex-shrink: 0;
+    }
+    .singer-popup .popup-avatar img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        display: block;
+    }
+
+    .singer-popup .popup-name {
+        font-size: 22px;
+        font-weight: 700;
+        color: var(--about-text-primary);
+        margin-bottom: 2px;
+        line-height: 1.3;
+    }
+    .singer-popup .popup-name .accent {
+        color: var(--about-accent);
+    }
+
+    .singer-popup .popup-desc {
+        font-size: 14px;
+        color: var(--about-text-muted);
+        margin-bottom: 12px;
+        line-height: 1.5;
+    }
+
+    .singer-popup .popup-extra {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        margin-top: 4px;
+        border-top: 1px solid var(--about-card-border);
+        padding-top: 14px;
+    }
+    .singer-popup .popup-extra .extra-label {
+        font-size: 11px;
+        font-weight: 600;
+        color: var(--about-text-muted);
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        opacity: 0.7;
+    }
+    .singer-popup .popup-extra .extra-tags {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 6px;
+    }
+    .singer-popup .popup-extra .extra-tags span {
+        background: var(--about-tag-bg);
+        padding: 3px 14px;
+        border-radius: 20px;
+        font-size: 12px;
+        color: var(--about-tag-text);
+        font-weight: 500;
+        border: 1px solid transparent;
+        transition: 0.2s;
+    }
+    .singer-popup .popup-extra .extra-tags span:hover {
+        border-color: var(--about-accent);
+        color: var(--about-accent);
+    }
+    .singer-popup .popup-extra .extra-meta {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4px 14px;
+        font-size: 12px;
+        color: var(--about-text-muted);
+    }
+    .singer-popup .popup-extra .extra-meta i {
+        color: var(--about-accent);
+        margin-right: 4px;
+        font-size: 11px;
+    }
+
+    /* ===== 暗色模式下弹出卡片增强样式 ===== */
+    @media (prefers-color-scheme: dark) {
+        .singer-popup {
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+            border-color: #4a6a8a;
+        }
+        .singer-item:hover .singer-popup {
+            box-shadow: 0 24px 72px rgba(0, 0, 0, 0.55), 0 8px 28px rgba(74, 144, 217, 0.08);
+        }
+        .singer-popup .popup-name {
+            color: #eef2f8;
+        }
+        .singer-popup .popup-desc {
+            color: #b0c4de;
+        }
+        .singer-popup .popup-extra .extra-label {
+            color: #8a9bb0;
+        }
+        .singer-popup .popup-extra .extra-meta {
+            color: #8a9bb0;
+        }
+        .singer-popup .popup-extra .extra-tags span {
+            background: #2a3a4a;
+            color: #b0c8e0;
+        }
+    }
+
+    html.dark .singer-popup,
+    [data-theme="dark"] .singer-popup {
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+        border-color: #4a6a8a;
+    }
+    html.dark .singer-item:hover .singer-popup,
+    [data-theme="dark"] .singer-item:hover .singer-popup {
+        box-shadow: 0 24px 72px rgba(0, 0, 0, 0.55), 0 8px 28px rgba(74, 144, 217, 0.08);
+    }
+    html.dark .singer-popup .popup-name,
+    [data-theme="dark"] .singer-popup .popup-name {
+        color: #eef2f8;
+    }
+    html.dark .singer-popup .popup-desc,
+    [data-theme="dark"] .singer-popup .popup-desc {
+        color: #b0c4de;
+    }
+    html.dark .singer-popup .popup-extra .extra-label,
+    [data-theme="dark"] .singer-popup .popup-extra .extra-label {
+        color: #8a9bb0;
+    }
+    html.dark .singer-popup .popup-extra .extra-meta,
+    [data-theme="dark"] .singer-popup .popup-extra .extra-meta {
+        color: #8a9bb0;
+    }
+    html.dark .singer-popup .popup-extra .extra-tags span,
+    [data-theme="dark"] .singer-popup .popup-extra .extra-tags span {
+        background: #2a3a4a;
+        color: #b0c8e0;
+    }
+
+    /* ===== 原卡片中的内容 ===== */
+    .singer-item .singer-avatar {
         width: 80px;
         height: 80px;
         border-radius: 12px;
@@ -565,32 +785,40 @@ if (true) {
         overflow: hidden;
         margin-bottom: 12px;
         flex-shrink: 0;
-        box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
-        transition: transform 0.3s ease;
+        box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.08);
+        transition: none;
     }
-    .singer-item:hover .singer-avatar {
-        transform: scale(1.05);
-    }
-    .singer-avatar img {
+    .singer-item .singer-avatar img {
         width: 100%;
         height: 100%;
         object-fit: cover;
         object-position: center;
         display: block;
+        transition: none;
     }
-    .singer-name {
+
+    .singer-item .singer-name {
         font-size: 16px;
         font-weight: 600;
         color: var(--about-text-primary);
         display: block;
         margin-bottom: 2px;
         line-height: 1.3;
+        transition: color 0.3s ease;
     }
-    .singer-desc {
+    .singer-item:hover .singer-name {
+        color: var(--about-accent);
+    }
+
+    .singer-item .singer-desc {
         font-size: 13px;
         color: var(--about-text-muted);
         display: block;
         line-height: 1.4;
+    }
+
+    .singer-item .singer-extra {
+        display: none;
     }
 
     /* ===== 爱好 ===== */
@@ -693,19 +921,57 @@ if (true) {
         .motto-card .quote-icon,
         .motto-card .quote-icon-right { display: none; }
         .singer-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 16px; }
-        .singer-avatar { width: 72px; height: 72px; border-radius: 10px; }
+
+        .singer-popup {
+            width: 240px;
+            padding: 22px 18px 20px;
+            transform: translate(-50%, -50%) scale(0.88);
+        }
+        .singer-item:hover .singer-popup {
+            transform: translate(-50%, -50%) scale(1);
+        }
+        .singer-popup .popup-avatar {
+            max-width: 160px;
+        }
+        .singer-popup .popup-name {
+            font-size: 19px;
+        }
+
         .hobby-grid { grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); gap: 12px; }
         .about-card-header { font-size: 19px; }
         .about-card-header i { font-size: 22px; width: 30px; }
         .extend-grid { grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); }
-        /* 移动端家乡图片占位文字位置微调 */
         .hometown-image .placeholder-text { bottom: 8px; font-size: 12px; padding: 4px 12px; }
     }
+
     @media (max-width: 480px) {
         .profile-name { font-size: 22px; }
         .profile-avatar { width: 80px; height: 80px; border-radius: 8px; }
-        .singer-grid { grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); }
-        .singer-avatar { width: 64px; height: 64px; border-radius: 8px; }
+        .singer-grid { grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 12px; }
+        .singer-popup {
+            width: 200px;
+            padding: 18px 14px 16px;
+            transform: translate(-50%, -50%) scale(0.82);
+        }
+        .singer-item:hover .singer-popup {
+            transform: translate(-50%, -50%) scale(1);
+        }
+        .singer-popup .popup-avatar {
+            max-width: 130px;
+        }
+        .singer-popup .popup-name {
+            font-size: 17px;
+        }
+        .singer-popup .popup-desc {
+            font-size: 12px;
+        }
+        .singer-popup .popup-extra .extra-tags span {
+            font-size: 10px;
+            padding: 2px 10px;
+        }
+        .singer-popup .popup-extra .extra-meta {
+            font-size: 10px;
+        }
         .hobby-grid { grid-template-columns: repeat(auto-fill, minmax(85px, 1fr)); }
         .about-card { padding: 16px 14px; }
         .motto-text { font-size: 16px; }
@@ -714,7 +980,7 @@ if (true) {
 </style>
 
 <!-- ============================================================
-     页面内容（保留您填写的所有个人信息）
+     页面内容
      ============================================================ -->
 <div class="about-custom">
 
@@ -726,7 +992,7 @@ if (true) {
             </div>
             <div class="profile-title">🌱 正在成长的/热爱生活的 高中生</div>
             <div class="profile-bio">
-                <i class="fas fa-map-pin"></i> 
+                <i class="fas fa-map-pin"></i>
                 热爱探索未知，相信「行胜于言」
             </div>
         </div>
@@ -771,44 +1037,137 @@ if (true) {
         </div>
     </div>
 
-    <!-- ===== 喜欢的歌手 ===== -->
+    <!-- ===== 喜欢的歌手 · Microsoft Store 弹出卡片 ===== -->
     <div class="about-card">
         <div class="about-card-header">
             <i class="fas fa-microphone-alt"></i>
             喜欢的歌手
             <span class="header-line"></span>
         </div>
+
         <div class="singer-grid">
+
+            <!-- Taylor Swift -->
             <div class="singer-item">
                 <div class="singer-avatar">
                     <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://i0.hdslb.com/bfs/new_dyn/9afca962677f69d96b9f6ddfbec7248a2109200351.jpg@1192w.avif" alt="Taylor Swift">
                 </div>
                 <span class="singer-name">Taylor Swift</span>
                 <span class="singer-desc">世女一</span>
+
+                <div class="singer-popup">
+                    <div class="popup-avatar">
+                        <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://i0.hdslb.com/bfs/new_dyn/9afca962677f69d96b9f6ddfbec7248a2109200351.jpg@1192w.avif" alt="Taylor Swift">
+                    </div>
+                    <div class="popup-name">Taylor <span class="accent">Swift</span></div>
+                    <div class="popup-desc">世女一 · 创作才女 · 流行天后</div>
+                    <div class="popup-extra">
+                        <div class="extra-label">🎵 代表作</div>
+                        <div class="extra-tags">
+                            <span>Love Story</span>
+                            <span>Cruel Summer</span>
+                            <span>Shake it Off</span>
+                            <span>Welcome To New York</span>
+                            <span>Blank Space</span>
+                        </div>
+                        <div class="extra-meta">
+                            <span><i class="fas fa-music"></i> Pop / Country / Folk</span>
+                            <span><i class="fas fa-trophy"></i> 14 座格莱美</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+            <!-- 坂本龙一 -->
             <div class="singer-item">
                 <div class="singer-avatar">
                     <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://i0.hdslb.com/bfs/new_dyn/892cf22b18256a2ff2072083e477dc6e2109200351.png@948w_948h.avif" alt="坂本龙一">
                 </div>
                 <span class="singer-name">坂本龙一</span>
-                <span class="singer-desc">音乐教授</span>
+                <span class="singer-desc">永远的教授 · 配乐大师</span>
+
+                <div class="singer-popup">
+                    <div class="popup-avatar">
+                        <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://i0.hdslb.com/bfs/new_dyn/892cf22b18256a2ff2072083e477dc6e2109200351.png@948w_948h.avif" alt="坂本龙一">
+                    </div>
+                    <div class="popup-name">坂本 <span class="accent">龙一</span></div>
+                    <div class="popup-desc">永远的教授 · 配乐大师 · 反战人士</div>
+                    <div class="popup-extra">
+                        <div class="extra-label">🎵 代表作</div>
+                        <div class="extra-tags">
+                            <span>Merry Christmas Mr. Lawrence </span>
+                            <span>opus</span>
+                            <span>Rain</span>
+                        </div>
+                        <div class="extra-meta">
+                            <span><i class="fas fa-music"></i> Ambient / Classical</span>
+                            <span><i class="fas fa-award"></i> 奥斯卡最佳配乐</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+            <!-- Eminem -->
             <div class="singer-item">
                 <div class="singer-avatar">
                     <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://i0.hdslb.com/bfs/new_dyn/bce7e2e280943e4a21856ec821e093c62109200351.png@1192w.avif" alt="Eminem">
                 </div>
                 <span class="singer-name">Eminem</span>
                 <span class="singer-desc">说唱之神</span>
+
+                <div class="singer-popup">
+                    <div class="popup-avatar">
+                        <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://i0.hdslb.com/bfs/new_dyn/bce7e2e280943e4a21856ec821e093c62109200351.png@1192w.avif" alt="Eminem">
+                    </div>
+                    <div class="popup-name"><span class="accent">Eminem</span></div>
+                    <div class="popup-desc">说唱之神 · 押韵狂魔 · 嘻哈传奇</div>
+                    <div class="popup-extra">
+                        <div class="extra-label">🎵 代表作</div>
+                        <div class="extra-tags">
+                            <span>Lose Yourself</span>
+                            <span>Rap God</span>
+                            <span>Stan</span>
+                        </div>
+                        <div class="extra-meta">
+                            <span><i class="fas fa-music"></i> Hip-Hop / Rap</span>
+                            <span><i class="fas fa-trophy"></i> 15 座格莱美</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+            <!-- Sabrina Carpenter -->
             <div class="singer-item">
                 <div class="singer-avatar">
                     <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://i0.hdslb.com/bfs/new_dyn/aba6bbf01732e71d7c894eec7c5ae5ea2109200351.jpg@1192w.avif" alt="Sabrina Carpenter">
                 </div>
                 <span class="singer-name">Sabrina Carpenter</span>
                 <span class="singer-desc">霍尼女王</span>
+
+                <div class="singer-popup">
+                    <div class="popup-avatar">
+                        <img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://i0.hdslb.com/bfs/new_dyn/aba6bbf01732e71d7c894eec7c5ae5ea2109200351.jpg@1192w.avif" alt="Sabrina Carpenter">
+                    </div>
+                    <div class="popup-name">Sabrina <span class="accent">Carpenter</span></div>
+                    <div class="popup-desc">霍尼女王 · 流行新星 · 实力唱将</div>
+                    <div class="popup-extra">
+                        <div class="extra-label">🎵 代表作</div>
+                        <div class="extra-tags">
+                            <span>Espresso</span>
+                            <span>Please Please Please</span>
+                            <span>Manchild</span>
+                        </div>
+                        <div class="extra-meta">
+                            <span><i class="fas fa-music"></i> Pop / R&B</span>
+                            <span><i class="fas fa-star"></i> 新生代实力唱将</span>
+                        </div>
+                    </div>
+                </div>
             </div>
+
         </div>
-        <p class="helper-text"><i class="fas fa-headphones"></i> 音乐是生活的底色</p>
+
+        <p class="helper-text"><i class="fas fa-headphones"></i> No Music, No Life</p>
     </div>
 
     <!-- ===== 爱好 ===== -->
@@ -889,7 +1248,7 @@ if (true) {
 } else {
   subtitleType()
 }
-</script></div></div><div class="footer-bar-right"><a class="footer-bar-link" href="/" title="Lauriasy's Space">Lauriasy's Space</a></div></div></div></footer></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="sidebar-site-data site-data is-center"><a href="/archives/" title="archive"><div class="headline">文章</div><div class="length-num">4</div></a><a href="/tags/" title="tag"><div class="headline">标签</div><div class="length-num">4</div></a><a href="/categories/" title="category"><div class="headline">分类</div><div class="length-num">2</div></a></div><span class="sidebar-menu-item-title">功能</span><div class="sidebar-menu-item"><a class="darkmode_switchbutton menu-child" href="javascript:void(0);" title="显示模式"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span>显示模式</span></a></div><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title">网页</div><div class="back-menu-list"><a class="back-menu-item" href="/lauriasy.github.io" title="博客"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://tvax1.sinaimg.cn/large/0068Yrn7gy1ia9zwa7157j31kw1kw000.jpg" alt="博客"/><span class="back-menu-item-text">博客</span></a></div></div><div class="back-menu-list-group"><div class="back-menu-list-title">项目</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://image.anheyu.com/" title="安知鱼图床"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://image.anheyu.com/favicon.ico" alt="安知鱼图床"/><span class="back-menu-item-text">安知鱼图床</span></a></div></div></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 文章</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><i class="anzhiyufont anzhiyu-icon-box-archive faa-tada" style="font-size: 0.9em;"></i><span> 隧道</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><i class="anzhiyufont anzhiyu-icon-shapes faa-tada" style="font-size: 0.9em;"></i><span> 分类</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags faa-tada" style="font-size: 0.9em;"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 我的</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/music/?id=17757011521&amp;server=netease"><i class="anzhiyufont anzhiyu-icon-music faa-tada" style="font-size: 0.9em;"></i><span> 音乐</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/compass/"><i class="fa-regular fa-compass faa-tada"></i><span> 网址导航</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/equipment/"><span> 装备</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 摸鱼一下</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/teacherrabbit"><i class="fa-solid fa-gamepad faa-tada"></i><span> TeacherRabbit</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 关于</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/about/"><i class="fa-solid fa-user-tag faa-tada"></i><span> 关于本人</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/AboutSide/"><i class="fa-solid fa-book faa-tada"></i><span> 关于本站</span></a></li></ul></div></div><span class="sidebar-menu-item-title">标签</span><div class="card-tags"><div class="item-headline"></div><div class="card-tag-cloud"><a href="/tags/emo%E6%97%B6%E5%88%BB/" style="font-size: 0.88rem;">emo时刻<sup>3</sup></a><a href="/tags/%E7%94%9F%E6%B4%BB/" style="font-size: 0.88rem;">生活<sup>1</sup></a><a href="/tags/%E9%9A%8F%E7%AC%94/" style="font-size: 0.88rem;">随笔<sup>3</sup></a><a href="/tags/%E9%9C%89%E9%9C%89/" style="font-size: 0.88rem;">霉霉<sup>1</sup></a></div></div><hr/></div></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="anzhiyufont anzhiyu-icon-gear"></i></button><button id="go-up" type="button" title="回到顶部"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></button></div></div><div id="nav-music"><a id="nav-music-hoverTips" onclick="anzhiyu.musicToggle()" accesskey="m">播放音乐</a><div id="console-music-bg"></div><meting-js id="17757011521" server="netease" type="playlist" mutex="true" preload="none" theme="var(--anzhiyu-main)" data-lrctype="0" order="random" volume="0.7"></meting-js></div><div id="rightMenu"><div class="rightMenu-group rightMenu-small"><div class="rightMenu-item" id="menu-backward"><i class="anzhiyufont anzhiyu-icon-arrow-left"></i></div><div class="rightMenu-item" id="menu-forward"><i class="anzhiyufont anzhiyu-icon-arrow-right"></i></div><div class="rightMenu-item" id="menu-refresh"><i class="anzhiyufont anzhiyu-icon-arrow-rotate-right" style="font-size: 1rem;"></i></div><div class="rightMenu-item" id="menu-top"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></div></div><div class="rightMenu-group rightMenu-line rightMenuPlugin"><div class="rightMenu-item" id="menu-copytext"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制选中文本</span></div><div class="rightMenu-item" id="menu-pastetext"><i class="anzhiyufont anzhiyu-icon-paste"></i><span>粘贴文本</span></div><a class="rightMenu-item" id="menu-commenttext"><i class="anzhiyufont anzhiyu-icon-comment-medical"></i><span>引用到评论</span></a><div class="rightMenu-item" id="menu-newwindow"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开</span></div><div class="rightMenu-item" id="menu-copylink"><i class="anzhiyufont anzhiyu-icon-link"></i><span>复制链接地址</span></div><div class="rightMenu-item" id="menu-copyimg"><i class="anzhiyufont anzhiyu-icon-images"></i><span>复制此图片</span></div><div class="rightMenu-item" id="menu-downloadimg"><i class="anzhiyufont anzhiyu-icon-download"></i><span>下载此图片</span></div><div class="rightMenu-item" id="menu-newwindowimg"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开图片</span></div><div class="rightMenu-item" id="menu-search"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>站内搜索</span></div><div class="rightMenu-item" id="menu-searchBaidu"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>百度搜索</span></div><div class="rightMenu-item" id="menu-music-toggle"><i class="anzhiyufont anzhiyu-icon-play"></i><span>播放音乐</span></div><div class="rightMenu-item" id="menu-music-back"><i class="anzhiyufont anzhiyu-icon-backward"></i><span>切换到上一首</span></div><div class="rightMenu-item" id="menu-music-forward"><i class="anzhiyufont anzhiyu-icon-forward"></i><span>切换到下一首</span></div><div class="rightMenu-item" id="menu-music-playlist" onclick="window.open(&quot;https://music.163.com/#/playlist?id=17757011521&amp;creatorId=1689339213&amp;sharedId=1689339213&quot;, &quot;_blank&quot;);" style="display: none;"><i class="anzhiyufont anzhiyu-icon-radio"></i><span>查看所有歌曲</span></div><div class="rightMenu-item" id="menu-music-copyMusicName"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制歌名</span></div></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item menu-link" id="menu-randomPost"><i class="anzhiyufont anzhiyu-icon-shuffle"></i><span>随便逛逛</span></a><a class="rightMenu-item menu-link" href="/categories/"><i class="anzhiyufont anzhiyu-icon-cube"></i><span>博客分类</span></a><a class="rightMenu-item menu-link" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags"></i><span>文章标签</span></a></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item" id="menu-copy" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制地址</span></a><a class="rightMenu-item" id="menu-commentBarrage" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-message"></i><span class="menu-commentBarrage-text">关闭热评</span></a><a class="rightMenu-item" id="menu-darkmode" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span class="menu-darkmode-text">深色模式</span></a><a class="rightMenu-item" id="menu-translate" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-language"></i><span>轉為繁體</span></a></div></div><div id="rightmenu-mask"></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.cbd.int/@fancyapps/ui@6.1.6/dist/fancybox/fancybox.umd.js"></script><script src="https://cdn.cbd.int/instant.page@5.2.0/instantpage.js" type="module"></script><script src="https://cdn.cbd.int/vanilla-lazyload@19.1.3/dist/lazyload.iife.min.js"></script><script src="https://cdn.cbd.int/node-snackbar@0.1.16/dist/snackbar.min.js"></script><canvas id="universe"></canvas><script async src="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/dark/dark.js"></script><script>// 消除控制台打印
+</script></div></div><div class="footer-bar-right"><a class="footer-bar-link" href="/" title="Lauriasy's Space">Lauriasy's Space</a></div></div></div></footer></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="sidebar-site-data site-data is-center"><a href="/archives/" title="archive"><div class="headline">文章</div><div class="length-num">4</div></a><a href="/tags/" title="tag"><div class="headline">标签</div><div class="length-num">4</div></a><a href="/categories/" title="category"><div class="headline">分类</div><div class="length-num">2</div></a></div><span class="sidebar-menu-item-title">功能</span><div class="sidebar-menu-item"><a class="darkmode_switchbutton menu-child" href="javascript:void(0);" title="显示模式"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span>显示模式</span></a></div><div class="back-menu-list-groups"><div class="back-menu-list-group"><div class="back-menu-list-title">网页</div><div class="back-menu-list"><a class="back-menu-item" href="/lauriasy.github.io" title="博客"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://tvax1.sinaimg.cn/large/0068Yrn7gy1ia9zwa7157j31kw1kw000.jpg" alt="博客"/><span class="back-menu-item-text">博客</span></a></div></div><div class="back-menu-list-group"><div class="back-menu-list-title">项目</div><div class="back-menu-list"><a class="back-menu-item" target="_blank" rel="noopener" href="https://image.anheyu.com/" title="安知鱼图床"><img class="back-menu-item-icon" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://image.anheyu.com/favicon.ico" alt="安知鱼图床"/><span class="back-menu-item-text">安知鱼图床</span></a></div></div></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 文章</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/archives/"><i class="anzhiyufont anzhiyu-icon-box-archive faa-tada" style="font-size: 0.9em;"></i><span> 隧道</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/categories/"><i class="anzhiyufont anzhiyu-icon-shapes faa-tada" style="font-size: 0.9em;"></i><span> 分类</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags faa-tada" style="font-size: 0.9em;"></i><span> 标签</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 我的</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/music/?id=17757011521&amp;server=netease"><i class="anzhiyufont anzhiyu-icon-music faa-tada" style="font-size: 0.9em;"></i><span> 音乐</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/compass/"><i class="fa-regular fa-compass faa-tada"></i><span> 网址导航</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/equipment/"><i class="fa-solid fa-person-walking-luggage faa-tada"></i><span> 装备</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><span> 关于</span></a><ul class="menus_item_child"><li><a class="site-page child faa-parent animated-hover" href="/about/"><i class="fa-solid fa-user-tag faa-tada"></i><span> 关于本人</span></a></li><li><a class="site-page child faa-parent animated-hover" href="/AboutSide/"><i class="fa-solid fa-book faa-tada"></i><span> 关于本站</span></a></li></ul></div></div><span class="sidebar-menu-item-title">标签</span><div class="card-tags"><div class="item-headline"></div><div class="card-tag-cloud"><a href="/tags/emo%E6%97%B6%E5%88%BB/" style="font-size: 0.88rem;">emo时刻<sup>3</sup></a><a href="/tags/%E7%94%9F%E6%B4%BB/" style="font-size: 0.88rem;">生活<sup>1</sup></a><a href="/tags/%E9%9A%8F%E7%AC%94/" style="font-size: 0.88rem;">随笔<sup>3</sup></a><a href="/tags/%E9%9C%89%E9%9C%89/" style="font-size: 0.88rem;">霉霉<sup>1</sup></a></div></div><hr/></div></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="anzhiyufont anzhiyu-icon-arrows-left-right"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="anzhiyufont anzhiyu-icon-gear"></i></button><button id="go-up" type="button" title="回到顶部"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></button></div></div><div id="nav-music"><a id="nav-music-hoverTips" onclick="anzhiyu.musicToggle()" accesskey="m">播放音乐</a><div id="console-music-bg"></div><meting-js id="17757011521" server="netease" type="playlist" mutex="true" preload="none" theme="var(--anzhiyu-main)" data-lrctype="0" order="random" volume="0.7"></meting-js></div><div id="rightMenu"><div class="rightMenu-group rightMenu-small"><div class="rightMenu-item" id="menu-backward"><i class="anzhiyufont anzhiyu-icon-arrow-left"></i></div><div class="rightMenu-item" id="menu-forward"><i class="anzhiyufont anzhiyu-icon-arrow-right"></i></div><div class="rightMenu-item" id="menu-refresh"><i class="anzhiyufont anzhiyu-icon-arrow-rotate-right" style="font-size: 1rem;"></i></div><div class="rightMenu-item" id="menu-top"><i class="anzhiyufont anzhiyu-icon-arrow-up"></i></div></div><div class="rightMenu-group rightMenu-line rightMenuPlugin"><div class="rightMenu-item" id="menu-copytext"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制选中文本</span></div><div class="rightMenu-item" id="menu-pastetext"><i class="anzhiyufont anzhiyu-icon-paste"></i><span>粘贴文本</span></div><a class="rightMenu-item" id="menu-commenttext"><i class="anzhiyufont anzhiyu-icon-comment-medical"></i><span>引用到评论</span></a><div class="rightMenu-item" id="menu-newwindow"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开</span></div><div class="rightMenu-item" id="menu-copylink"><i class="anzhiyufont anzhiyu-icon-link"></i><span>复制链接地址</span></div><div class="rightMenu-item" id="menu-copyimg"><i class="anzhiyufont anzhiyu-icon-images"></i><span>复制此图片</span></div><div class="rightMenu-item" id="menu-downloadimg"><i class="anzhiyufont anzhiyu-icon-download"></i><span>下载此图片</span></div><div class="rightMenu-item" id="menu-newwindowimg"><i class="anzhiyufont anzhiyu-icon-window-restore"></i><span>新窗口打开图片</span></div><div class="rightMenu-item" id="menu-search"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>站内搜索</span></div><div class="rightMenu-item" id="menu-searchBaidu"><i class="anzhiyufont anzhiyu-icon-magnifying-glass"></i><span>百度搜索</span></div><div class="rightMenu-item" id="menu-music-toggle"><i class="anzhiyufont anzhiyu-icon-play"></i><span>播放音乐</span></div><div class="rightMenu-item" id="menu-music-back"><i class="anzhiyufont anzhiyu-icon-backward"></i><span>切换到上一首</span></div><div class="rightMenu-item" id="menu-music-forward"><i class="anzhiyufont anzhiyu-icon-forward"></i><span>切换到下一首</span></div><div class="rightMenu-item" id="menu-music-playlist" onclick="window.open(&quot;https://music.163.com/#/playlist?id=17757011521&amp;creatorId=1689339213&amp;sharedId=1689339213&quot;, &quot;_blank&quot;);" style="display: none;"><i class="anzhiyufont anzhiyu-icon-radio"></i><span>查看所有歌曲</span></div><div class="rightMenu-item" id="menu-music-copyMusicName"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制歌名</span></div></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item menu-link" id="menu-randomPost"><i class="anzhiyufont anzhiyu-icon-shuffle"></i><span>随便逛逛</span></a><a class="rightMenu-item menu-link" href="/categories/"><i class="anzhiyufont anzhiyu-icon-cube"></i><span>博客分类</span></a><a class="rightMenu-item menu-link" href="/tags/"><i class="anzhiyufont anzhiyu-icon-tags"></i><span>文章标签</span></a></div><div class="rightMenu-group rightMenu-line rightMenuOther"><a class="rightMenu-item" id="menu-copy" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-copy"></i><span>复制地址</span></a><a class="rightMenu-item" id="menu-commentBarrage" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-message"></i><span class="menu-commentBarrage-text">关闭热评</span></a><a class="rightMenu-item" id="menu-darkmode" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-circle-half-stroke"></i><span class="menu-darkmode-text">深色模式</span></a><a class="rightMenu-item" id="menu-translate" href="javascript:void(0);"><i class="anzhiyufont anzhiyu-icon-language"></i><span>轉為繁體</span></a></div></div><div id="rightmenu-mask"></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.cbd.int/@fancyapps/ui@6.1.6/dist/fancybox/fancybox.umd.js"></script><script src="https://cdn.cbd.int/instant.page@5.2.0/instantpage.js" type="module"></script><script src="https://cdn.cbd.int/vanilla-lazyload@19.1.3/dist/lazyload.iife.min.js"></script><script src="https://cdn.cbd.int/node-snackbar@0.1.16/dist/snackbar.min.js"></script><canvas id="universe"></canvas><script async src="https://npm.elemecdn.com/anzhiyu-theme-static@1.0.0/dark/dark.js"></script><script>// 消除控制台打印
 var HoldLog = console.log;
 console.log = function () {};
 let now1 = new Date();
@@ -962,7 +1321,7 @@ queueMicrotask(() => {
     console.warn.bind(console, "%c S013-782 %c 你现在正处于监控中.", "color:white; background-color:#d9534f", "")
   );
 });</script><script async src="/anzhiyu/random.js"></script><div class="js-pjax"><input type="hidden" name="page-type" id="page-type" value="anzhiyu"></div><script>var visitorMail = "";
-</script><script async data-pjax src="https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/waterfall/waterfall.js"></script><script src="https://cdn.cbd.int/qrcodejs@1.0.0/qrcode.min.js"></script><script src="/js/anzhiyu/right_click_menu.js"></script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.1.9/icon/ali_iconfont_css.css"><script src="/js/dashboard.js" defer></script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/aplayer/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.cbd.int/anzhiyu-blog-static@1.0.1/js/APlayer.min.js"></script><script src="https://cdn.cbd.int/hexo-anzhiyu-music@1.0.1/assets/js/Meting2.min.js"></script><script src="https://cdn.cbd.int/pjax@0.2.8/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+</script><script async data-pjax src="https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/waterfall/waterfall.js"></script><script src="https://cdn.cbd.int/qrcodejs@1.0.0/qrcode.min.js"></script><script src="/js/anzhiyu/right_click_menu.js"></script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.1.9/icon/ali_iconfont_css.css"><script src="/js/dashboard.js" defer></script><script src="/js/notice-card.js" defer></script><link rel="stylesheet" href="https://cdn.cbd.int/anzhiyu-theme-static@1.0.0/aplayer/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.cbd.int/anzhiyu-blog-static@1.0.1/js/APlayer.min.js"></script><script src="https://cdn.cbd.int/hexo-anzhiyu-music@1.0.1/assets/js/Meting2.min.js"></script><script src="https://cdn.cbd.int/pjax@0.2.8/pjax.min.js"></script><script>let pjaxSelectors = ["head > title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
 var pjax = new Pjax({
   elements: 'a:not([target="_blank"])',
   selectors: pjaxSelectors,
